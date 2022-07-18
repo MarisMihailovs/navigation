@@ -9,10 +9,15 @@
   --navColor5: #231858;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   scroll-snap-type: block proximity;
+
 }
 
 body {
@@ -38,12 +43,12 @@ body {
 
 .overlay-slide-right {
   transition: all 0.4s ease-in-out;
-  transform: translate(0);
+  transform: translateX(0);
 }
 
 .overlay-slide-left {
   transition: all 0.8s ease-in-out;
-  transform: translate(-100vw);
+  transform: translateX(-100vw);
 }
 
 
@@ -117,6 +122,71 @@ nav li:nth-of-type(5) {
   background-color: var(--navColor5);
 }
 
+/* slide in animation */
+
+.slide-in-1 {
+  animation: slide-in 0.3s linear 0.2s both;
+}
+
+.slide-in-2 {
+  animation: slide-in 0.3s linear 0.3s both;
+}
+
+.slide-in-3 {
+  animation: slide-in 0.3s linear 0.6s both;
+}
+
+.slide-in-4 {
+  animation: slide-in 0.3s linear 0.8s both;
+}
+
+.slide-in-5 {
+  animation: slide-in 0.3s linear 1s both;
+}
+
+@keyframes slide-in {
+
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* slide out animation */
+
+.slide-out-1 {
+  animation: slide-out 0.3s linear 0.5s both;
+}
+
+.slide-out-2 {
+  animation: slide-out 0.3s linear 0.4s both;
+}
+
+.slide-out-3 {
+  animation: slide-out 0.3s linear 0.3s both;
+}
+
+.slide-out-4 {
+  animation: slide-out 0.3s linear 0.2s both;
+}
+
+.slide-out-5 {
+  animation: slide-out 0.3s linear 0.1s both;
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 /* --- Menu Bars ------------------------------------ */
 
 .menu-bars {
@@ -135,7 +205,7 @@ nav li:nth-of-type(5) {
   height: 2px;
   background-color: #fff;
   margin: 8px 0;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 /* Rotate first bar */
@@ -158,7 +228,6 @@ nav li:nth-of-type(5) {
 section {
   width: 100%;
   height: 100vh;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,36 +235,35 @@ section {
   letter-spacing: 2px;
   color: var(--primaryColor);
   scroll-snap-align: center;
+
 }
 
-section#home {
+
+div#homeBackground {
+  width: 100%;
+  height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1581453904507-626ddb717f14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
   background-size: cover;
   background-position: center center;
+  position: fixed;
+  z-index: -1;
 }
 
-section#home a {
-  position: absolute;
-  z-index: 2;
-  top: 1.5rem;
-  left: 1.5rem;
-  text-decoration: none;
-  font-size: 0.8rem;
-  padding-bottom: 5px;
-  color: var(--primaryColor);
-  border-bottom: 1px solid var(--primaryColor);
-}
+
 
 section#about {
   background-color: var(--navColor2);
+
 }
 
 section#skills {
   background-color: var(--navColor3);
+
 }
 
 section#projects {
   background-color: var(--navColor4);
+
 }
 
 section#contact {
