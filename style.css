@@ -3,7 +3,7 @@
 :root {
   --primaryColor: #fff;
   --navColor1: #21292c;
-  --navColor2: #3C3176;
+  --navColor2: #3c3176;
   --navColor3: #867DB0;
   --navColor4: #5D5393;
   --navColor5: #231858;
@@ -242,11 +242,22 @@ section {
 div#homeBackground {
   width: 100%;
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1581453904507-626ddb717f14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
+  background-image: url(Background.JPG);
   background-size: cover;
+  filter: grayscale(100%) blur(2px);
   background-position: center center;
   position: fixed;
   z-index: -1;
+}
+
+div#backgroundOverlay {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0.5) 90%);
+  z-index: 0;
 }
 
 
