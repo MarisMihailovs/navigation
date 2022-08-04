@@ -3,9 +3,9 @@
 :root {
   --primaryColor: #fff;
   --navColor1: #21292c;
-  --navColor2: #3c3176;
-  --navColor3: #867DB0;
-  --navColor4: #5D5393;
+  --navColor2: #4158D0;
+  --navColor3: #0093E9;
+  --navColor4: #50606f;
   --navColor5: #231858;
 }
 
@@ -264,16 +264,21 @@ div#backgroundOverlay {
 
 section#about {
   background-color: var(--navColor2);
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
 }
 
 section#skills {
+
   background-color: var(--navColor3);
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
 
 }
 
 section#projects {
   background-color: var(--navColor4);
+  background-image: linear-gradient(135deg, #50606f 0%, #9599E2 50%, #ffffff 100%);
 
 }
 
