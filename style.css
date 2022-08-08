@@ -256,11 +256,12 @@ div#backgroundOverlay {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0.5) 90%);
   z-index: 0;
 }
 
-
+h1 {
+  margin: 1rem;
+}
 
 section#about {
   background-color: var(--navColor2);
