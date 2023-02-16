@@ -187,6 +187,21 @@ nav li:nth-of-type(5) {
   }
 }
 
+.show-heading {
+
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 /* --- Menu Bars ------------------------------------ */
 
 .menu-bars {
@@ -262,6 +277,7 @@ div#backgroundOverlay {
 h1 {
   margin: 1rem;
   text-align: center;
+  font-size: 50px;
 }
 
 section#about {
