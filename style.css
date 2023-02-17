@@ -15,8 +15,8 @@
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
-  scroll-snap-type: block proximity;
+  /* scroll-behavior: smooth;
+  scroll-snap-type: block proximity; */
 
 }
 
