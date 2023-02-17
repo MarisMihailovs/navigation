@@ -189,8 +189,8 @@ nav li:nth-of-type(5) {
 
 /* h1 animations */
 .show-heading {
-
   animation: fadeIn 5s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn {
