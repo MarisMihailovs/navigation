@@ -37,7 +37,7 @@ let callback = (entries, observer) => {
             entry.target.classList.add('show-heading');
         } else {
             // Remove 'show-heading' class otherwise
-            entry.target.classList.remove('show-heading');
+            entry.target.style.opacity = 1;
         }
     })
 }
