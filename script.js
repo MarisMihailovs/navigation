@@ -33,6 +33,7 @@ let callback = (entries, observer) => {
         if (entry.intersectionRatio > 0) {
             console.log("entry.boundingClientRect", entry.boundingClientRect);
             // Add 'show-heading' class if observation target is inside viewport
+            console.log("entry.intersectionRatio", entry.intersectionRatio);
             entry.target.classList.add('show-heading');
         } else {
             // Remove 'show-heading' class otherwise
