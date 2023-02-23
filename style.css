@@ -189,7 +189,7 @@ nav li:nth-of-type(5) {
 
 /* h1 animations */
 .show-heading {
-  animation: fadeIn 5s;
+  animation: fadeIn 2.5s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
@@ -197,10 +197,12 @@ nav li:nth-of-type(5) {
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateX(-100%);
   }
 
   to {
     opacity: 1;
+    transform: translateX(0);
   }
 }
 
